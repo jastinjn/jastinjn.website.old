@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Reload Tank!</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel="icon" href="images/tamago.png">
+    <script src = "js/scripts.js"></script>
+</head> 
+
+<body id="gameBody">
+    <aside id="mySideNav" class="sideNav">
+        <nav>
+            <ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="close_nav()">&times;</a>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "gallery.html">Gallery</a></li>
+                <li class = "dropDown" onmouseenter="list_drop(this)" onmouseleave="list_up(this)">
+                    <a href = "#">Projects <span></span></a>
+                    <ul>
+                        <li><a href = "reloadTank.html">Reload Tank!</a></li>
+                        <li><a href = "tileBasedRPG.html">Tile Based RPG</a></li>
+                        <li><a href = "persona4bit.html">Persona 4: 8 bit</a></li>
+                    </ul>
+                </li>
+                <li class = "dropDown" onmouseenter="list_drop(this)" onmouseleave="list_up(this)">
+                    <a href = "#">Journal <span></span></a>
+                    <ul>
+                        <li><a href = "#">Date 1</a></li>
+                        <li><a href = "#">Date 2</a></li>
+                        <li><a href = "#">Date 3</a></li>
+                    </ul>
+                </li>
+                <li><a href = "contactInfo.html">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div id = "transWrap">
+        <header>
+            <span id = "menuToggle" onclick = "open_nav()">Menu</span>
+            <span id = "faceCircle">
+                <span id="igHandle">ig:&nbsp;justingoestoamerica</span>
+                <a href = "https://www.instagram.com/justingoestoamerica/"><img src = "images/face.png" alt = "portrait photo of me" onmouseenter="show_ig()" onmouseleave="hide_ig()"></a>
+            </span>
+        </header>
+
+        <section id = "main">
+            
+            <h2>Reload Tank!</h2>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XcMakgCodyQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
+            <section>
+                <h3>Gameplay</h3>
+                <p>
+                    In <i>Reload Tank!</i>, players take on the role of a loader in a main battle tank. On each mission, the player's vehicle encounters a variety of 
+                    enemy forces. The player must identify, select and load the correct type of ammunition in order to survive each mission. 
+                    Between missions, players can repair their tank's armor, purchase munitions and view intel for the next operation.
+                    Once your tank take three direct hits, its all over!
+                </p>
+            </section>
+
+            <section>
+                <h3>Art and Sound</h3>
+                <p>
+                    In designing this game's art, I attempted to replicate the look of an original Game Boy game played on a Game Boy Pocket. 
+                    All the art is drawn with only 4 colors (5, if transparency is counted) which are varying shades of grayish green. Despite
+                    the limited palette, the sprites came out rather clean. Fonts commonly used on early Game Boy games were used for certain text elements as well.
+                </p>
+
+                <figure>
+                    <a href = "images/GameAssets/reloadTankSprites.png"><img src = "images/GameAssets/reloadTankSprites.png" alt = "Spritesheet for Reload Tank!"></a>
+                    <figcaption>Sprite Sheet for Reload Tank</figcaption>
+                </figure>
+                <p>
+                    Like the art, I also chose to follow an 8-bit audio design style. A majority of the SFX found in the game are taken from free use libraries.
+                    To create the drum pattern in the opening and the song in the ending, I used the program famitracker, which is an audio tracker software used to 
+                    create music that can be played on an actual Famicon console. Certain audio bits were also highly compressed to create a scratchy retro audio playback.
+                </p>
+            </section>
+
+            <section>
+                <h3>Programming</h3>
+                <p>
+                    This was my first original project created using Gamemaker Studio 2. Almost all the code is entirely mine, though some scripts
+                    were borrowed from the great tutorial series by <a href = "https://www.youtube.com/channel/UCn7FE3Tx391g1tWPv-1tv7Q">Shawn Spalding</a>. 
+                    Basic gamemaker language concepts are used in this game, including collision detection, 2D arrays and camera movement.
+                </p>
+            </section>
+        </section>
+        
+        <div id = "footerWrap"></div>
+            <footer>
+                <a href = "#top">Back to Top</a>
+                <span>Email: superjjn718@gmail.com</span>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Justin's Homepage</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel="icon" href="images/tamago.png">
+    <script src = "js/scripts.js"></script>
+</head> 
+
+<body>
+    <aside id="mySideNav" class="sideNav">
+        <nav>
+            <ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="close_nav()">&times;</a>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "gallery.html">Gallery</a></li>
+                <li class = "dropDown" onmouseenter="list_drop(this)" onmouseleave="list_up(this)">
+                    <a href = "javascript:void(0)">Projects <span></span></a>
+                    <ul>
+                        <li><a href = "reloadTank.html">Reload Tank!</a></li>
+                        <li><a href = "tileBasedRPG.html">Tile Based RPG</a></li>
+                        <li><a href = "persona4bit.html">Persona 4: 8 bit</a></li>
+                    </ul>
+                </li>
+                <li class = "dropDown" onmouseenter="list_drop(this)" onmouseleave="list_up(this)">
+                    <a href = "#">Journal <span></span></a>
+                    <ul>
+                        <li><a href = "#">Date 1</a></li>
+                        <li><a href = "#">Date 2</a></li>
+                        <li><a href = "#">Date 3</a></li>
+                    </ul>
+                </li>
+                <li><a href = "contactInfo.html">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <div id = "transWrap">
+        <header>
+            <span id = "menuToggle" onclick = "open_nav()">Menu</span>
+            <!--
+            <a id = "faceCircle" href = "https://www.instagram.com/justingoestoamerica/">
+                <span id="igHandle">ig:&nbsp;justingoestoamerica</span>
+                <img src = "images/face.png" alt = "portrait photo of me" onmouseenter="show_ig()" onmouseleave="hide_ig()">
+            </a>-->
+
+            <span id = "faceCircle">
+                <span id="igHandle">ig:&nbsp;justingoestoamerica</span>
+                <a href = "https://www.instagram.com/justingoestoamerica/"><img src = "images/face.png" alt = "portrait photo of me" onmouseenter="show_ig()" onmouseleave="hide_ig()"></a>
+            </span>
+        </header>
+
+        <section id = "main">
+            
+            <h2>About Me</h2>
+            <img src = "images/vintageLens.jpg" alt = "Picture of Justin in the White Mountains">
+            <p>
+                Hey there! My name is Justin Ng. I am currently a second year student studying Computer Engineering at the Univeristy of Michigan.
+            </p>
+            <p>
+                I was born in Singapore on July 18th, 1999. In early 2002, my family moved to Redwood City, California where I attended Sandpiper Elementary School.
+                We returned to Singapore in 2012, where I completed my secondary education at St. Joseph's Institution. After graduation, I enlisted in the Singapore
+                Armed Forces and served as a tank specialist in 48th Battalion Singapore Armored Regiment. I am now living in the city of Ann Arbor, Michigan
+                pursuing my bachelor's degree under the Singapore Public Service Commision Scholarship for Engineering.
+            </p>
+            <p>
+                Some areas I am excited to explore while pursuing my engineering degree are computer vision, autonomous robotics and user-centered design. 
+                Aside from my studies, I enjoy programming small games and am learning web development. I also enjoy playing the piano and have 
+                a massive collection of vintage video game consoles and games (Game Boy, SNES, Dreamcast etc). I don't do too much on the physical side
+                aside from jogging and core training, but I do occasionally play badminton and windsurf.
+            </p>
+            
+        </section>
+        <div id = "footerWrap"></div>
+            <footer>
+                <a href = "#top">Back to Top</a>
+                <span>Email: superjjn718@gmail.com</span>
+            </footer>
+        </div>
+    </div> 
+</body>
+
+</html>

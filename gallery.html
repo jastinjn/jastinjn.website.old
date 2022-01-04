@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Gallery</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel="icon" href="images/tamago.png">
+    <script src = "js/scripts.js"></script>
+</head> 
+
+<body>
+    <aside id="mySideNav" class="sideNav">
+        <nav>
+            <ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="close_nav()">&times;</a>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "gallery.html">Gallery</a></li>
+                <li class = "dropDown" onmouseenter="list_drop(this)" onmouseleave="list_up(this)">
+                    <a href = "#">Projects <span></span></a>
+                    <ul>
+                        <li><a href = "reloadTank.html">Reload Tank!</a></li>
+                        <li><a href = "tileBasedRPG.html">Tile Based RPG</a></li>
+                        <li><a href = "persona4bit.html">Persona 4: 8 bit</a></li>
+                    </ul>
+                </li>
+                <li class = "dropDown" onmouseenter="list_drop(this)" onmouseleave="list_up(this)">
+                    <a href = "#">Journal <span></span></a>
+                    <ul>
+                        <li><a href = "#">Date 1</a></li>
+                        <li><a href = "#">Date 2</a></li>
+                        <li><a href = "#">Date 3</a></li>
+                    </ul>
+                </li>
+                <li><a href = "contactInfo.html">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div id = "transWrap">
+        <header>
+            <span id = "menuToggle" onclick = "open_nav()">Menu</span>
+            <span id = "faceCircle">
+                <span id="igHandle">ig:&nbsp;justingoestoamerica</span>
+                <a href = "https://www.instagram.com/justingoestoamerica/"><img src = "images/face.png" alt = "portrait photo of me" onmouseenter="show_ig()" onmouseleave="hide_ig()"></a>
+            </span>
+        </header>
+
+        <section id = "main">
+            
+            <h2>Gallery</h2>
+        
+            <p>
+                Below are some photos of my travels in Ann Arbor. Enjoy!
+            </p>
+        
+            <figure>
+                <img src = "images/northCampus.jpg" alt = "Trees outside the EECS building"> 
+                <figcaption>North Campus in the Fall</figcaption>
+            </figure>
+
+            <figure>
+                <img src = "images/chicagoBean.jpg" alt = "Friends and I at the Chicago bean"> 
+                <figcaption>Millennium Park during Thanksgiving</figcaption>
+            </figure>
+            
+            <figure>
+                <img src = "images/bostonChristmas.jpg" alt = "Mulled wine at the Boston Christmas market"> 
+                <figcaption>Boston Christmas Fair with the Berkeley Boys</figcaption>
+            </figure>
+
+            <figure>
+                <img src = "images/absSnowman.jpg" alt = "Friends with our snowmen"> 
+                <figcaption>Buffed Snowman in the White Mountains</figcaption>
+            </figure>
+        </section>
+        <div id = "footerWrap"></div>
+            <footer>
+                <a href = "#top">Back to Top</a>
+                <span>Email: superjjn718@gmail.com</span>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

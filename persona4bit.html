@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <title>Persona 4:8-bit</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <link rel="icon" href="images/tamago.png">
+    <script src = "js/scripts.js"></script>
+</head> 
+
+<body id="gameBody">
+    <aside id="mySideNav" class="sideNav">
+        <nav>
+            <ul>
+                <a href="javascript:void(0)" class="closebtn" onclick="close_nav()">&times;</a>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "gallery.html">Gallery</a></li>
+                <li class = "dropDown" onmouseenter="list_drop(this)" onmouseleave="list_up(this)">
+                    <a href = "#">Projects <span></span></a>
+                    <ul>
+                        <li><a href = "reloadTank.html">Reload Tank!</a></li>
+                        <li><a href = "tileBasedRPG.html">Tile Based RPG</a></li>
+                        <li><a href = "persona4bit.html">Persona 4: 8 bit</a></li>
+                    </ul>
+                </li>
+                <li class = "dropDown" onmouseenter="list_drop(this)" onmouseleave="list_up(this)">
+                    <a href = "#">Journal <span></span></a>
+                    <ul>
+                        <li><a href = "#">Date 1</a></li>
+                        <li><a href = "#">Date 2</a></li>
+                        <li><a href = "#">Date 3</a></li>
+                    </ul>
+                </li>
+                <li><a href = "contactInfo.html">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div id = "transWrap">
+        <header>
+            <span id = "menuToggle" onclick = "open_nav()">Menu</span>
+            <span id = "faceCircle">
+                <span id="igHandle">ig:&nbsp;justingoestoamerica</span>
+                <a href = "https://www.instagram.com/justingoestoamerica/"><img src = "images/face.png" alt = "portrait photo of me" onmouseenter="show_ig()" onmouseleave="hide_ig()"></a>
+            </span>
+        </header>
+
+        <section id = "main">
+            
+            <h2>Persona 4: 8-Bit</h2>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sgwgsyBK3yc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           
+            <section>
+                <h3>Gameplay</h3>
+                <p>
+                    This demo reimagines the first dungeon of Atlus's <i>Persona 4</i> as an 8-bit first person dungeon crawler RPG in the style of the company's 
+                    original Megami Tensei franchise for the NES. Players explore a randomly generated labyrinth, fighting off random encounters of shadows. 
+                    During battles, the player can use elemental weaknesses to their strength to knock down enemies, just as in the original PS2 titles. 
+                    The protagonist and Yosuke Hanamura appear as playable characters with respective personas Izanagi and Jiraiya.
+                    The game concludes with the boss fight against Shadow Chie.
+                </p>
+            </section>
+
+            <section>
+                <h3>Art and Sound</h3>
+                <p>
+                    The style of this game was greatly inspired by Megami Tensei II on the NES. All sprites and visual effects are 100% original. 
+                    Admittedly, the sprites are not as polished as they could be, as the focus of this project was programming the game's mechanics.
+                    The resolution of the screen is small, meant to copy the size of the Game Boy Color. In addition, all sprites have a maximum of 5
+                    unique colors (with exceptions), which was the color limitation of the system. I enjoyed creating the 8-bit portrait sprites of 
+                    the characters and enemies the most during this progress. 
+                </p>
+
+                <figure class = "gallery">
+                    <a href = "images/GameAssets/charports.png"><img src = "images/GameAssets/charports.png" alt = "Character sprites for Persona 4: 8-bit"></a>
+                    <a href = "images/GameAssets/personaFirstPErson.png"><img src = "images/GameAssets/personaFirstPErson.png" alt = "First person sprites for Persona 4: 8-bit"></a>
+                    <a href = "images/GameAssets/personaCastle.png"><img src = "images/GameAssets/personaCastle.png" alt = "Castle sprites for Persona 4: 8-bit"></a>
+                    <figcaption>Sprite Sheets for Persona 4: 8-bit</figcaption>
+                </figure>
+                <p>
+                    For music and audio effects, I used resources found online. All SFX used in this game are taken from the NES Megami Tensei games. For music, I found a collection
+                    of 8-bit versions of the Persona 4 ost and implemented them into the project.
+                </p>
+            </section>
+
+            <section>
+                <h3>Programming</h3>
+                <p>
+                    As this was the first project I had undertaken after taking a programming class, the code is much nicer compared to my previous two projects.
+                    This project makes great use of the new additions to the gamemaker language that came with update 2.3, namely updated arrays, functions, and the newly addedstructs.
+                    I also made heavy use of map data structures to store data for game elements such as enemies, abilities and equipment, unlike my previous project which used grids.
+                </p>
+                <p>
+                    At the start of each floor, an algorithm using Gamemaker's built-in map planning functions randomly generates the floor layout. To achieve the pseudo 3-dimensional view,
+                    a set of 2D sprites are scaled and position appropriately based on the position of map elements relative to the players position and direction. A minimap is also displayed,
+                    rendering nearby map elements to the bottom right corner of the GUI. The minimap was especially difficult to implement due to some oddities of the dungeon generator. 
+                </p>
+                <p>
+                    All playable characters and their attributes (health, stats, equipment) as well as enemy shadows exist as structs of data. At the start of random encounters, a controller retrieves this data,
+                    creates instances of each enemy and places them based on their turn over. A basic enemy AI system is used, which can be set to change enemy behaviour.
+                </p>
+            </section>
+        </section>
+        
+        <div id = "footerWrap"></div>
+            <footer>
+                <a href = "#top">Back to Top</a>
+                <span>Email: superjjn718@gmail.com</span>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
