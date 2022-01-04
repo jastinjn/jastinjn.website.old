@@ -128,7 +128,7 @@ body{
     max-width: 100%;
     position: relative;
     background-image: url('../images/arbNight.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: 100%;
     background-attachment: fixed;
     background-position-y: -100px;
