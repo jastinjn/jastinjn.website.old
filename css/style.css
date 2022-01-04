@@ -236,7 +236,7 @@ footer a{
 /* style for game pages */
 #gameBody{
     background-image: url('../images/GameAssets/tilesetexample.png');
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     background-attachment: fixed;
     background-size: 15%;
     background-position-y: -16px;
