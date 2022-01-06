@@ -274,3 +274,76 @@ footer a{
 .gallery figcaption{
     clear:both;
 }
+
+/*style for journal pages*/
+
+#chineseBody{
+    background-image: url('../images/greenYellowPattern.png');
+    background-repeat: repeat;
+    background-color: #234b33;
+}
+
+#chineseBody #main{
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #FFFdd0;
+    padding: 3%;
+}
+
+#journalNav{
+    margin: 0;
+    padding-left:10%;
+    padding-right:10%;
+    background-color: #c6dae7;
+    height: 32px;
+    padding: 2px;
+    border-bottom: #97a2d1 2px solid;
+}
+
+#journalNav nav{
+    text-align: center;
+}
+
+#journalNav a{
+    width: 90px;
+    height: 32px;
+    line-height: 32px;
+    margin: 3px;
+    padding: 3px;
+    border-radius: 12px;
+
+    background-color: rgba(255, 255, 255, 1);
+    border:rgb(194, 194, 194) 1px solid;
+    color:rgba(0, 0, 0, 1);
+    text-decoration: none;
+}
+
+#journalNav a:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+#date{
+    display: inline-block;
+    text-align: left;
+    float: left;
+    margin-bottom: 1%;
+}
+
+#weather{
+    display: inline-block;
+    text-align: right;
+    margin-bottom: 1%;
+    float:right;
+}
+
+#chineseBody p{
+    clear: both;
+    margin-bottom: 2.5%;
+    color: #1a1a1a;
+}
+
+#chineseBody header, #chineseBody footer{
+    background-color: #385e46;
+    color: #eeeeee;
+    border-color: rgb(79, 133, 109);
+}

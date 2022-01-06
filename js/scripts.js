@@ -32,3 +32,13 @@ function show_ig(){
 function hide_ig(){
     document.getElementById('igHandle').style.opacity = "0";
 }
+
+function replace_entry_links(){
+    var entryLinks = document.getElementsByClassName("entryLink");
+    var entries = document.getElementsByClassName("entry");
+    for (var i = 0; i < entryLinks.length; i++){
+        entryLinks[i].innerHTML = entries[i].innerHTML;
+        entryLinks[i].href = entries[i].href;
+    }
+    document.getElementById("mostRecent").href = entries[0].href;
+}

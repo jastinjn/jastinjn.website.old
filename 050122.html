@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang = "zh">
 
 <head>
     <meta charset = "UTF-8">
-    <title>Justin's Homepage</title>
+    <title>日记</title>
     <link rel = "stylesheet" href = "css/style.css">
     <link rel="icon" href="images/tamago.png">
     <script src = "js/scripts.js"></script>
 </head> 
-
-<body>
+   
+<body id="chineseBody" onload="replace_entry_links()">
+    
     <aside id="mySideNav" class="sideNav">
         <nav>
             <ul>
@@ -25,11 +26,11 @@
                     </ul>
                 </li>
                 <li class = "dropDown" onmouseenter="list_drop(this)" onmouseleave="list_up(this)">
-                    <a href = "050122.html">Journal <span></span></a>
+                    <a id = "mostRecent" href = "#">Journal <span></span></a>
                     <ul>
-                        <li><a href = "050122.html">1月5日</a></li>
-                        <li><a href = "121221.html">12月12日</a></li>
-                        <li><a href = "241121.html">11月24日</a></li>
+                        <li><a class = "entryLink" href = "#">Date 1</a></li>
+                        <li><a class = "entryLink" href = "#">Date 2</a></li>
+                        <li><a class = "entryLink" href = "#">Date 3</a></li>
                     </ul>
                 </li>
                 <li><a href = "contactInfo.html">Contact</a></li>
@@ -40,34 +41,36 @@
     <div id = "transWrap">
         <header>
             <span id = "menuToggle" onclick = "open_nav()">Menu</span>
-
             <span id = "faceCircle">
                 <span id="igHandle">ig:&nbsp;justingoestoamerica</span>
                 <a href = "https://www.instagram.com/justingoestoamerica/"><img src = "images/face.png" alt = "portrait photo of me" onmouseenter="show_ig()" onmouseleave="hide_ig()"></a>
             </span>
         </header>
 
+        <div id = "journalNav">
+            <nav>
+                <a class = "entry" href = "050122.html">1月5日</a>
+                <a class = "entry" href = "121221.html">12月2日</a>
+                <a class = "entry" href = "241121.html">11月24日</a>
+            </nav>
+        </div>
+
         <section id = "main">
-            
-            <h2>About Me</h2>
-            <img src = "images/vintageLens.jpg" alt = "Picture of Justin in the White Mountains">
+            <span id = "date">2022 年 1 月 5日</span>
+            <span id =  "weather">风</span>
             <p>
-                Hey there! My name is Justin Ng. I am currently a second year student studying Computer Engineering at the Univeristy of Michigan.
+                今天是冬季学期第一天。去年假期的时候，我去Boston见Peter和祈祷小组。为了开车到New Hampshire,我和Peter租了一个汽车。那星期我正好得到过我的驾驶执照，所以我在New Hampshire开车。
+                起到小组的人都很友好，我们一起旅游，玩雪，做饭，祈祷等等。
             </p>
             <p>
-                I was born in Singapore on July 18th, 1999. In early 2002, my family moved to Redwood City, California where I attended Sandpiper Elementary School.
-                We returned to Singapore in 2012, where I completed my secondary education at St. Joseph's Institution. After graduation, I enlisted in the Singapore
-                Armed Forces and served as a tank specialist in 48th Battalion Singapore Armored Regiment. I am now living in the city of Ann Arbor, Michigan
-                pursuing my bachelor's degree under the Singapore Public Service Commision Scholarship for Engineering.
+                在圣诞前夕，我回到Ann Arbor。由于几乎所有的学生已经回家了，到处都非常安静。我只有三个朋友留在Ann Arbor，所以每天找他们做晚饭。除了去Yost滑冰，Ann Arbor没有有意思活动，真的很无聊。
+                我在朋友的公寓开始学网页设计和玩电脑游戏。
             </p>
             <p>
-                Some areas I am excited to explore while pursuing my engineering degree are computer vision, autonomous robotics and user-centered design. 
-                Aside from my studies, I enjoy programming small games and am learning web development. I also enjoy playing the piano and have 
-                a massive collection of vintage video game consoles and games (Game Boy, SNES, Dreamcast etc). I don't do too much on the physical side
-                aside from jogging and core training, but I do occasionally play badminton and windsurf.
+                虽然我希望回去新加坡，但是我知道回去是浪费钱，是因为这冬季假只有两个星期。我要等到夏季回去。
             </p>
-            
         </section>
+
         <div id = "footerWrap"></div>
             <footer>
                 <a href = "#top">Back to Top</a>
@@ -75,6 +78,10 @@
             </footer>
         </div>
     </div> 
+
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>
